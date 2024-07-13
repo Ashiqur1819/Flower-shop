@@ -31,6 +31,12 @@ border: 1px solid #E55473;
 border-radius: 5px;
 color: white;
 cursor: pointer;
+transition: .3s;
+}
+.btn:hover{
+    color: #E55473;
+    background-color: white;
+    transition: .3s;
 }
 .span{
 color: #E55473;
@@ -69,7 +75,7 @@ margin-bottom: 30px;
 margin-bottom: 20px;
 }
 .hero-img{
-max-width: 34%;
+width: 34%;
 }
 .hero-img img{
 width: 100%;
@@ -78,9 +84,11 @@ width: 100%;
 
 /* Featured section starts here */
 .featured-section{
-width: 90%;
 margin: 0 auto;
 margin-bottom: 150px;
+}
+.featured-img-1{
+width:25%;
 }
 .featured-content{
 margin-bottom: 100px;
@@ -88,24 +96,20 @@ margin-bottom: 100px;
 .featured-images{
 display: flex;
 align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
+justify-content: space-around;
+padding: 20px;
+gap: 50px;
 }
-.featured-img-1{
-width: 350px;
-}
+
 .featured-img-title{
 height: 415px;
-width: 320px;
-padding-top: 50px;
-padding-left: 20px;
-padding-right: 20px;
+width: 100%;
 overflow: hidden;
 border-top-left-radius: 48%;
 border-top-right-radius: 48%;
 }
 .featured-img-title img{
-max-width: 90%;
+width: 100%;
 margin-top: 50px;
 }
 .featured-img-1 > .title-1{
@@ -121,6 +125,9 @@ background-color: rgb(71, 125, 17, .15);
 margin-top: 15px;
 font-size: 20px;
 font-weight: bold;
+}
+.featured-img-footer:hover a{
+color: #E55473;
 }
 /* Featured section ends here */
 
@@ -187,6 +194,12 @@ margin-top: 50px;
 .instagram-img{
 width: 23%;
 border-radius: 5px;
+box-shadow: 5px 5px 5px 2px rgb(233, 232, 232);
+transition: .3s;
+}
+.instagram-img:hover{
+    transform: scale(.9);
+    transition: .3s;
 }
 /* Instagram section ends here */
 
@@ -213,6 +226,9 @@ border-radius: 5px;
 width: 300px;
 margin-right: 5px;
 }
+/* Subscribe section starts here */
+
+/* Footer section starts here */
 .footer{
 background-color: #111010;
 height: 300px;
@@ -230,4 +246,54 @@ color: white;
 .copyright{
 color: rgb(102, 102, 102);
 }
-/* Subscribe section ends here */
+/* Footer section starts here */
+
+
+
+
+
+
+/* Responsive design starts here (For Mobile) */
+@media screen and (max-width:576px) {
+header,
+.featured-section,
+.support-section,
+.banner-container,
+.instagram,
+.subscribe{
+    margin-bottom: 100px;
+}
+.hero-section,
+.featured-images,
+.support,
+.banner,
+.instagram-images{
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+}
+.hero-content,
+.hero-img,
+.featured-img-1,
+.instagram-img{
+    width: 100%;
+}
+.hero-title{
+    font-size: 40px;
+}
+.hero-description {
+    text-align: justify;
+}
+.featured-content{
+    margin-bottom: 50px;
+}
+.banner-content{
+    width: 100%;
+    padding-top: 50px;
+}
+input[type="text"]{
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+}
